@@ -1,8 +1,9 @@
-#!/usr/bin/env ruby
+#!/usr/bin/env jruby
 
 require 'rb_webcam'
 
 capture = Webcam.new
 image = capture.grab
-image.save("test.jpg")
+img_file="test.jpg"
+image.save(img_file)
 capture.close
