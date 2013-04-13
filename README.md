@@ -17,13 +17,20 @@ designated Bitcoin account into a designated wallet
 Usage
 -----
 
+    # Need this if you don't have Ruby 1.8
     brew install rbenv
     brew install ruby-build
+    
+    # Skip to this if you're already running ruby 1.8
     brew tap homebrew/science
     brew install opencv
     git clone https://github.com/myplanet-experimental/bitcoin-atm.git && cd bitcoin-atm
     wget --ouput-document=/tmp/cacert.pem http://curl.haxx.se/ca/cacert.pem
     SSL_CERT_FILE=/tmp/cacert.pem bundle install
+    bundle exec ruby snippets/capture-image.rb
+    # This next line doesn't yet work unless we remove rb_webcam from
+    # Gemfile and run `bundle install` again. Need to figure out.
+    bundle exec ruby snippets/decode-qr.rb
 
 Inspiration
 -----------
