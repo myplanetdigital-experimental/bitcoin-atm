@@ -1,7 +1,10 @@
 bitcoin-atm
 ===========
 
-MVP for an honour system Bitcoin ATM for spreading the Bitcoin love around our office.
+MVP for an honour system Bitcoin ATM for spreading the Bitcoin love
+around our office. Goal is to run a Rails app inside a very secure
+vagrant VM that is inaccessible from the host except via non-vagrant
+login credentials that are manually set.
 
 Roadmap
 -------
